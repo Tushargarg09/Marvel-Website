@@ -1,256 +1,180 @@
-﻿<html>
+<html>
 <head>
-<link rel="Stylesheet" type="text/css" href="css1.css">
+<title>Homepage</title>
 </head>
-<body>
-<div id="navbar" >
-  <a  href="index.html" class="active"><b>Home</b></a>
-   <a  href="intro.htm"><b>About</b></a>
-  <a href="history.html" ><b>History</b></a>
-  <a href="facilities.html" ><b>Facilities</b>
-  <a href="et.html"><b>Equipments</b></a>
-  <a href="agents.htm"><b>Agent Details</b></a>
-  <a href="fallen.html"><b>Fallen Warriors</b></a>
-  <a href="threat.html"><b>Threats to Earth</b></a>
-  <a href="form.html"><b>Join Us</b></a>
-</div>
-<div class="container">
- <div class="parallax2">
- </div>
-<script>
-<!--window.onscroll = function() {myFunction()};
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  }  else {
-    navbar.classList.remove("sticky");
-  } 
-} -->
-</script >
+/* Set a style for all buttons */
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
 
+button:hover {
+    opacity: 0.8;
+}
 
-<div class="slideshow-container">
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 14</div>
-  <img src="ss1.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 0px 0 0px 0;
+    position: relative;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 14</div>
-  <img src="ss2.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+img.avatar {
+    width: 0%;
+    border-radius: 0%;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 14</div>
-  <img src="ss3.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+.container {
+    padding: 16px;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 14</div>
-  <img src="ss4.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 14</div>
-  <img src="ss5.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Sit on top */
+    top:0;
+    width: 60%; /* Full width */
+    height: 60%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">6 / 14</div>
-  <img src="ss6.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid ;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">7 / 14</div>
-  <img src="ss7.jpg" style="width:100%">
-  <div class="text"><b></b>.</div>
-</div>
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">8 / 14</div>
-  <img src="ss8.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">9 / 14</div>
-  <img src="ss9.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">10 / 14</div>
-  <img src="ss10.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">11 / 14</div>
-  <img src="ss11.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 000px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body bgcolor="black">
+<button onclick="document.getElementById('id01').style.display='inline-block'" style="width;" text-align:center;><center><img src="s.h.i.e.l.d.-wallpapers-27680-3506231.jpg" title="Click To Login">  </center> </button>
 
-<div class="mySlides fade">
-  <div class="numbertext">12 / 14</div>
-  <img src="ss12.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">13 / 14</div>
-  <img src="ss13.jpg" style="width:100%">
-  <div class="text"><b><b></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">14 / 14</div>
-  <img src="ss14.jpg" style="width:100%">
-  <div class="text"><b></b></div>
-</div>
-
-
-
-</div>
-<br>
-
-<div style="text-align:center">
-
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
+<div id="id01" class="modal">
   
+  <form class="modal-content animate" action="home.html">
+    <div class="imgcontainer">
+     <p align="left"><b><font color="black" size="6" >Login</b></font>
+ <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="Enter your email address"><b>E-Mail</b></label>
+      <input type="email" placeholder="Enter E-Mail" name="psw" required>
+       
+       <label for="country"><b>Country</b></label>
+      <input type="text" placeholder="Enter Country Name" name="psw" required>
+ 
+      <label for="mobile no."><b>Mobile No.</b></label>
+      <input type="text" placeholder="Enter Mobile No." name="psw" required maxlength="10" >
+
+<button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </form>
 </div>
 
 <script>
-var slideIndex = 0;
-showSlides();
+// Get the modal
+var modal = document.getElementById('id01');
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 
-<div  style="height:450px;background-image:url('bg1.jpg');font-size:16px;text-align:center;font-family:Century Gothic;padding:20px;" >
-</br>
-<h1><font color="white">DIRECTOR- Nick Fury </h1>
-<p><img src="nick1.jpg" align="left" >&nbsp;&nbsp;&nbsp;&nbsp;
-<p style="color:#ffffff;text-align:center;padding-left:5px;">Colonel Nicholas "Nick" Joseph Fury was a former officer of the <span style="color: #0066ff;">United States Army </span>and an espionage veteran of the<span style="color: #0066ff;"> CIA </span>&nbsp;&nbsp;&nbsp;&nbsp;during the <span style="color: #0066ff;">Cold War</span>. He joined <span style="color: #0066ff;">S.H.I.E.L.D.</span>, a covert international peacekeeping organization which operates as&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; humanity's first line of defense against <span style="color: #0066ff;">Earth</span>'s most dangerous enemies. He quickly impressed S.H.I.E.L.D.'s higher-ups, and was promoted to the position of Director, becoming the leader of S.H.I.E.L.D. He led S.H.I.E.L.D. for years, spearheading the <span style="color: #0066ff;">Avengers Initiative</span>, <span style="color: #0066ff;">Project T.A.H.I.T.I.</span>, <span style="color: #0066ff;">Project Insight</span>, and other operations.</p>
-
-&nbsp;&nbsp;&nbsp;&nbsp;<p style="color:#ffffff;text-align:center;">Preceding the <span style="color: #0066ff;">HYDRA Uprising</span>, an <span style="color: #0066ff;">assassination attempt</span> was made on his life. Fury survived but elected to remain officially dead, telling only a select few that he was still alive. After the attack on the <span style="color: #0066ff;">Triskelion</span>, he went deep underground to begin rooting out the forces of <span style="color: #0066ff;">HYDRA</span>. As a part of this mission, he joined <span style="color: #0066ff;">Phil Coulson</span> and helped him and his <span style="color: #0066ff;">team defeat John &nbsp;&nbsp;&nbsp;&nbsp;Garrett</span>. Afterwards, he made Coulson the new Director of S.H.I.E.L.D. and left to continue his mission. He helped the<span style="color: #0066ff;"> Avengers </span>defeat<span style="color: #0066ff;"> Ultron </span>in the<span style="color: #0066ff;"> Battle of Sokovia</span> and later assisted them in the<span style="color: #0066ff;"> New Avengers Facility</span>.</p>
-
-</div>
-</br>
-<br>
-<p><center><font color="white" align="centre" size="7">Gallery</font></center>
-<br>
-<div class="container3">
-   <div class="box3">
-		<div class="imgBox3">
-				<img src="Battle_of_Triskelion_2.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> Battle of Triskelion 2</h2>
-			</div>
-			</div>
-   </div>
-   <div class="box3"><div class="imgBox3">
-				<img src="F-35_Lightning_II.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> F-35 Lightning II</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="Helicarrier_aft.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> Helicarrier aft</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="Helicarrier's_battle_TWS.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> Helicarrier's battle TWS</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="Operation_Daybreak.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2>Operation Daybreak</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="Project_Insight.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> Project Insight</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="S.H.I.E.L.D._Aircraft_Carrier.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> S.H.I.E.L.D. Aircraft Carrier</h2>
-			</div>
-			</div></div>
-   <div class="box3"><div class="imgBox3">
-				<img src="Heli_scars.png" height="200px" width="300px">
-			</div>
-			<div class="details3">
-			<div class="content3">
-			<h2> Heli scars</h2>
-			</div>
-			</div></div>
-</div>
-</br>
-
-<div class="footer"></br>
-	<p><font color="white" face="Arial Nova">© 2018 by S.H.I.E.L.D. All Rights Reserved.</p>
-</div>
 </body>
+</html>
+
+
+/body>
 </html>
 
