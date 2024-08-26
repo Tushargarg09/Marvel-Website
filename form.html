@@ -1,0 +1,156 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="css.css">
+<style>
+form {border: 0px solid #f1f1f1;}
+
+input[type=text],[type=number],[type=date],select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container1{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    width:700px;
+    height:655px;
+    
+}
+
+span.psw {
+    float: left;
+    padding-top: 13px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+body  {
+    background-image:url("589553.png");
+    backround-attachment:fixed;
+}
+</style>
+</head>
+<body background="bg6.jpg">
+<div id="navbar" >
+ <a  href="home.html" ><b>Home</b></a>
+   <a  href="intro.htm"><b>About</b></a>
+  <a href="history.html" ><b>History</b></a>
+  <a href="facilities.html" ><b>Facilities</b>
+   <a href="et.html"><b>Equipments</b></a>
+  <a href="agents.htm"><b>Agent Details</b></a>
+  <a href="fallen.html"><b>Fallen Warriors</b></a>
+  <a href="threat.html"><b>Threats to Earth</b></a>
+  <a href="form.html" class="active"><b>Join Us</b></a>
+</div>
+
+ <div class="parallax2">
+ </div>
+<script>
+<!--window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  }  else {
+    navbar.classList.remove("sticky");
+  } 
+} -->
+</script >
+
+
+  <div class="content">
+  <form >
+  <div class="imgcontainer">
+
+  </div>
+<table align="center" cellpadding="2" cellspacing="6">
+<th><FONT COLOR="WHITE" size="7" >Registeration Form</th></font>
+<tr>
+<td>
+  <div class="container1">
+ 
+     <label for="fname"> Name</label>
+     <input type="text" placeholder="Enter your Name" name="psw" required>
+     
+    <label for="lname">Species</label>
+     <input type="text" placeholder="Enter your Species" name="psw" required>
+      
+    <label for="lname">Mobile No.</label>
+     <input type="text" placeholder="Enter your Mobile No." name="psw" required maxlength="10"> 
+  
+ <label for="lname">Citizenship</label>
+     <input type="text" placeholder="Enter Citizenship" name="psw" required>
+  
+<label for="country">Gender</label><br><br>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+ <br><br>
+<label for="fname">Age</label>
+     <input type="number" placeholder="Your age" name="psw" required>
+    
+ <label for="fname">Date of Birth</label>
+    <input type="date" name="bday" placeholder="Your D.O.B..." required>
+    
+ 
+<label for="fname">Superpower/Speciality</label>
+    <input type="text" placeholder="Your Superpower/Speciality" name="psw" required>
+
+<button onclick="myFunction()" type="submit">Login</button>
+    <script>
+function myFunction() {
+    alert("You have registrated successfully. You will get message soon");
+}
+</script>
+</br></br>
+</div>
+</td>
+</table>
+</div>
+</form>
+<br>
+<div class="footer">
+	<p><font color="white" face="Arial Nova">© 2018 by S.H.I.E.L.D. All Rights Reserved.</p>
+</div>
+</body>
+</html>
